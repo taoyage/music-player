@@ -39,7 +39,8 @@ module.exports = {
       'api': resolve('src/api'),
       'base': resolve('src/base'),
       'router': resolve('src/router'),
-      'store': resolve('src/store')
+      'store': resolve('src/store'),
+      'components': resolve('src/components')
     }
   },
   module: {
