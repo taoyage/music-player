@@ -1,8 +1,9 @@
 export const url = {
-  slider: 'https://c.y.qq.com/musichall/fcgi-bin/fcg_yqqhomepagerecommend.fcg'
+  slider: 'https://c.y.qq.com/musichall/fcgi-bin/fcg_yqqhomepagerecommend.fcg',
+  discList: '/api/getDiscList'
 };
 
-export const commonPrams = {
+export const commonParams = {
   g_tk: 5381,
   format: 'json',
   inCharset: 'utf-8',

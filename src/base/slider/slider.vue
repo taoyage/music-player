@@ -60,6 +60,22 @@ export default {
       this._setSliderWidth(true);
     });
   },
+  activated() {
+    if (!this.slider) {
+      return;
+    }
+    this.slider.enable();
+    let pageIndex = this.slider.getCurrentPage().pageX;
+    this.slider.goToPage(pageIndex, 0, 0);
+    this.currentPageIndex = pageIndex;
+    if (this.autoPlay) {
+      this._play();
+    }
+  },
+  deactivated() {
+    this.slider.disable();
+    clearTimeout(this.timer);
+  },
   methods: {
     _setSliderWidth(isResize) {
       this.children = this.$refs.sliderGroup.children;
