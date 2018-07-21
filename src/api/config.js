@@ -1,6 +1,7 @@
 export const url = {
   slider: 'https://c.y.qq.com/musichall/fcgi-bin/fcg_yqqhomepagerecommend.fcg',
-  discList: '/api/getDiscList'
+  discList: '/api/getDiscList',
+  singerList: 'https://c.y.qq.com/v8/fcg-bin/v8.fcg'
 };
 
 export const commonParams = {
@@ -12,7 +13,7 @@ export const commonParams = {
 };
 
 export const options = {
-  param: 'jsonpCallback'
+  param: ['jsonpCallback']
 };
 
 export const ERR_OK = 0;
