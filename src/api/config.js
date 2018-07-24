@@ -1,7 +1,8 @@
 export const url = {
   slider: 'https://c.y.qq.com/musichall/fcgi-bin/fcg_yqqhomepagerecommend.fcg',
   discList: '/api/getDiscList',
-  singerList: 'https://c.y.qq.com/v8/fcg-bin/v8.fcg'
+  singerList: 'https://c.y.qq.com/v8/fcg-bin/v8.fcg',
+  singerDetail: 'https://c.y.qq.com/v8/fcg-bin/fcg_v8_singer_track_cp.fcg'
 };
 
 export const commonParams = {
