@@ -1,0 +1,28 @@
+{
+  "apps": [
+    {
+      "name": "music-player",
+      "script": "prod.server.js",
+      "env": {
+        "COMMON_VARIABLE": "true"
+      },
+      "env_production": {
+        "NODE_ENV": "production"
+      }
+    }
+  ],
+  "deploy": {
+    "production": {
+      "user": "root",
+      "host": ["101.132.109.189"],
+      "port": "22",
+      "ref": "origin/master",
+      "repo": "git@github.com:taoyage/music-player.git",
+      "path": "/www/website/production",
+      "ssh_options": "StrictHostKeyChecking=no",
+      "env": {
+        "NODE_ENV": "production"
+      }
+    }
+  }
+}
