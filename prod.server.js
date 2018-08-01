@@ -123,10 +123,10 @@ app.use(compression());
 
 app.use(express.static('./dist'));
 
-module.exports = app.listen(80, function(err) {
+module.exports = app.listen(8888, function(err) {
   if (err) {
     console.log(err);
     return;
   }
-  console.log('Listening at http://localhost:' + 80 + '\n');
+  console.log('Listening at http://localhost:' + 8888 + '\n');
 });
